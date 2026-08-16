@@ -1,0 +1,9 @@
+roles:
+  orchestrator:
+    authority: [dispatch]
+  automation:
+    authority: [classify, escalate]
+  implementation:
+    authority: [implement, test, integrate, bug_fix]
+  qa:
+    authority: [verify, report]

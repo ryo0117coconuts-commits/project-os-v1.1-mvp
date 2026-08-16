@@ -1,0 +1,16 @@
+automations:
+  AUTO-001:
+    name: Lifecycle Check
+    trigger: lifecycle
+    condition: transition
+    action: validate
+  AUTO-002:
+    name: Required Record Check
+    trigger: record
+    condition: required_fields
+    action: classify
+  AUTO-003:
+    name: Gate 3 Critical Check
+    trigger: gate3
+    condition: critical_issue
+    action: escalate

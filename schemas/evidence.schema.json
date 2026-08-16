@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evidence.schema.json",
+  "type": "object",
+  "required": ["evidence_id", "source", "status"],
+  "properties": {
+    "evidence_id": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "enum": ["AVAILABLE", "MISSING", "UNVERIFIED"]}
+  },
+  "additionalProperties": true
+}

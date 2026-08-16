@@ -1,0 +1,5 @@
+permissions:
+  orchestrator:
+    denied: [change_os_rule, confirm_blocker, automatic_kill, automatic_pivot]
+  automation:
+    denied: [confirm_blocker, automatic_kill, automatic_pivot, delete_critical_memory]

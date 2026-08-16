@@ -1,0 +1,8 @@
+gate3:
+  required_checks:
+    - Required Evidence
+    - Required QA
+    - Required Approval
+    - Critical Issue
+  results: [PASS, WARNING, BLOCKER CANDIDATE]
+  blocker_authority: authority

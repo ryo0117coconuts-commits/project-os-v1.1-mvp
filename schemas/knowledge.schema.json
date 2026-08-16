@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "knowledge.schema.json",
+  "type": "object",
+  "required": ["knowledge_id", "type", "content"],
+  "properties": {
+    "knowledge_id": {"type": "string", "minLength": 1},
+    "type": {"type": "string", "enum": ["CONTEXT", "DECISION", "EVIDENCE", "LEARNING", "KNOWLEDGE"]},
+    "content": {"type": "string"},
+    "references": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

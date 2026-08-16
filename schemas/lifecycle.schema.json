@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lifecycle.schema.json",
+  "type": "object",
+  "required": ["state", "transition"],
+  "properties": {
+    "state": {"$ref": "#/$defs/state"},
+    "transition": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "state": {
+      "type": "string",
+      "enum": ["PROPOSED", "DEFINED", "VALIDATED", "ACTIVE", "TASK", "EVIDENCE", "GATE", "DECISION", "COMPLETED", "KILLED", "PIVOTED", "STALLED", "KDS", "CLEANUP", "ARCHIVED"]
+    }
+  }
+}

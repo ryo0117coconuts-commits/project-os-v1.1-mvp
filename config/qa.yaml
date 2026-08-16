@@ -1,0 +1,11 @@
+checks:
+  - Schema
+  - Lifecycle
+  - Permission
+  - KDS
+  - Automation
+  - Gate 3
+  - Orchestrator
+  - Cleanup
+  - Fallback
+  - Recovery

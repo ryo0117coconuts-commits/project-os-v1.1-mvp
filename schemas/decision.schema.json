@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "decision.schema.json",
+  "type": "object",
+  "required": ["decision_id", "decision", "status"],
+  "properties": {
+    "decision_id": {"type": "string", "minLength": 1},
+    "decision": {"type": "string", "enum": ["GO", "HOLD", "NO-GO", "PIVOT", "KILL"]},
+    "status": {"type": "string", "enum": ["PENDING", "APPROVED", "REJECTED"]}
+  },
+  "additionalProperties": true
+}

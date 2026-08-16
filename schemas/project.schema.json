@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project.schema.json",
+  "type": "object",
+  "required": ["project_id", "name", "state"],
+  "properties": {
+    "project_id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "state": {"$ref": "lifecycle.schema.json#/$defs/state"}
+  },
+  "additionalProperties": true
+}
